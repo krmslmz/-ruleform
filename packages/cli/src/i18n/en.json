@@ -1,0 +1,60 @@
+{
+  "init": {
+    "creating": "Creating ruleform.yaml...",
+    "exists": "ruleform.yaml already exists. Use --force to overwrite.",
+    "detected": "Detected: {{tools}}",
+    "imported": "Imported {{count}} existing rules",
+    "success": "✓ Created ruleform.yaml with {{ruleCount}} rules and {{providerCount}} providers",
+    "hint": "Next: edit ruleform.yaml, then run `ruleform plan`"
+  },
+  "plan": {
+    "title": "RuleForm Plan — {{fileCount}} files across {{providerCount}} providers",
+    "create": "CREATE",
+    "update": "UPDATE",
+    "unchanged": "UNCHANGED",
+    "delete": "DELETE",
+    "summary": "Plan: {{created}} to create, {{updated}} to update, {{unchanged}} unchanged.",
+    "noChanges": "No changes. Your context files are up to date.",
+    "provider": "{{name}}:"
+  },
+  "apply": {
+    "title": "RuleForm Apply — writing {{count}} files",
+    "writing": "Writing files...",
+    "written": "✓ {{path}}",
+    "skipped": "= {{path}} (unchanged)",
+    "error": "✗ {{path}}: {{error}}",
+    "success": "Apply complete! {{count}} files written across {{providerCount}} providers.",
+    "noChanges": "Nothing to apply. Everything is up to date."
+  },
+  "validate": {
+    "title": "Validating ruleform.yaml...",
+    "syntaxOk": "✓ Config syntax valid",
+    "schemaOk": "✓ Schema validation passed",
+    "rulesOk": "✓ {{count}} rules defined, 0 conflicts",
+    "providersOk": "✓ {{count}} providers enabled",
+    "variablesOk": "✓ All variable references resolved",
+    "success": "Config is valid!",
+    "fail": "Validation failed:"
+  },
+  "providers": {
+    "title": "Available Providers:",
+    "on": "✓ ON",
+    "off": "✗ OFF"
+  },
+  "destroy": {
+    "title": "Removing RuleForm-generated files...",
+    "removed": "✓ Removed {{path}}",
+    "confirm": "This will remove {{count}} files. Continue?",
+    "success": "Destroyed {{count}} files.",
+    "nothing": "No RuleForm-generated files found."
+  },
+  "errors": {
+    "configNotFound": "No ruleform.yaml found. Run `ruleform init` to create one.",
+    "yamlParse": "YAML parse error at line {{line}}: {{message}}",
+    "validation": "Config validation error:",
+    "circularExtends": "Circular extends detected: {{chain}}",
+    "missingExtends": "Rule \"{{rule}}\" extends \"{{parent}}\" which does not exist.",
+    "missingVariable": "Variable \"{{name}}\" referenced in rule \"{{rule}}\" is not defined.",
+    "providerNotFound": "Provider \"{{name}}\" is not available."
+  }
+}

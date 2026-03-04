@@ -1,0 +1,53 @@
+version: "1"
+
+project:
+  name: "my-project"
+  description: "My awesome project"
+  stack:
+    - "TypeScript"
+  conventions:
+    language: "TypeScript"
+    style: "functional"
+
+providers:
+  cursor:
+    enabled: true
+  claude:
+    enabled: true
+  copilot:
+    enabled: true
+  windsurf:
+    enabled: false
+  gemini:
+    enabled: false
+
+variables:
+  error_handling: |
+    - Use try/catch for all async operations
+    - Return proper error responses with status codes
+    - Log errors with context
+    - Never swallow errors silently
+
+rules:
+  - name: "general"
+    description: "General coding style and conventions"
+    scope: always
+    priority: 1
+    content: |
+      ## Code Style
+
+      - Use functional patterns
+      - Prefer named exports
+      - Keep functions small and focused
+      - Write meaningful variable names
+
+  - name: "testing"
+    description: "Testing conventions"
+    scope: agent-requested
+    priority: 30
+    content: |
+      ## Testing
+
+      - Write tests alongside source files
+      - Use describe/it blocks
+      - Mock external services

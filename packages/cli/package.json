@@ -1,0 +1,54 @@
+{
+  "name": "ruleform",
+  "version": "0.1.0",
+  "description": "Terraform for AI coding rules. Write once, deploy to every AI tool.",
+  "type": "module",
+  "bin": {
+    "ruleform": "./dist/index.js"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "ai", "cursor", "claude", "copilot", "windsurf", "gemini",
+    "context", "rules", "coding-agent", "terraform", "devtools", "cli"
+  ],
+  "author": "Kerem Solmaz <founder@sitilify.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/keremsolmaz/ruleform.git",
+    "directory": "packages/cli"
+  },
+  "homepage": "https://ruleform.app",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "chalk": "^5.4.0",
+    "commander": "^13.1.0",
+    "diff": "^7.0.0",
+    "fs-extra": "^11.2.0",
+    "handlebars": "^4.7.8",
+    "js-yaml": "^4.1.0",
+    "ora": "^8.2.0",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@types/diff": "^6.0.0",
+    "@types/fs-extra": "^11.0.4",
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^22.0.0",
+    "tsup": "^8.3.0",
+    "typescript": "^5.7.0",
+    "vitest": "^3.0.0"
+  }
+}

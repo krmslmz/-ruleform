@@ -1,0 +1,60 @@
+{
+  "init": {
+    "creating": "ruleform.yaml oluşturuluyor...",
+    "exists": "ruleform.yaml zaten mevcut. Üzerine yazmak için --force kullanın.",
+    "detected": "Tespit edildi: {{tools}}",
+    "imported": "{{count}} mevcut kural içe aktarıldı",
+    "success": "✓ {{ruleCount}} kural ve {{providerCount}} sağlayıcı ile ruleform.yaml oluşturuldu",
+    "hint": "Sonraki adım: ruleform.yaml'ı düzenleyin, ardından `ruleform plan` çalıştırın"
+  },
+  "plan": {
+    "title": "RuleForm Plan — {{providerCount}} sağlayıcıda {{fileCount}} dosya",
+    "create": "OLUŞTUR",
+    "update": "GÜNCELLE",
+    "unchanged": "DEĞİŞMEDİ",
+    "delete": "SİL",
+    "summary": "Plan: {{created}} oluşturulacak, {{updated}} güncellenecek, {{unchanged}} değişmedi.",
+    "noChanges": "Değişiklik yok. Context dosyalarınız güncel.",
+    "provider": "{{name}}:"
+  },
+  "apply": {
+    "title": "RuleForm Apply — {{count}} dosya yazılıyor",
+    "writing": "Dosyalar yazılıyor...",
+    "written": "✓ {{path}}",
+    "skipped": "= {{path}} (değişmedi)",
+    "error": "✗ {{path}}: {{error}}",
+    "success": "Tamamlandı! {{providerCount}} sağlayıcıda {{count}} dosya yazıldı.",
+    "noChanges": "Uygulanacak bir şey yok. Her şey güncel."
+  },
+  "validate": {
+    "title": "ruleform.yaml doğrulanıyor...",
+    "syntaxOk": "✓ Yapılandırma sözdizimi geçerli",
+    "schemaOk": "✓ Şema doğrulaması başarılı",
+    "rulesOk": "✓ {{count}} kural tanımlı, 0 çakışma",
+    "providersOk": "✓ {{count}} sağlayıcı etkin",
+    "variablesOk": "✓ Tüm değişken referansları çözüldü",
+    "success": "Yapılandırma geçerli!",
+    "fail": "Doğrulama başarısız:"
+  },
+  "providers": {
+    "title": "Mevcut Sağlayıcılar:",
+    "on": "✓ AÇIK",
+    "off": "✗ KAPALI"
+  },
+  "destroy": {
+    "title": "RuleForm tarafından oluşturulan dosyalar kaldırılıyor...",
+    "removed": "✓ {{path}} kaldırıldı",
+    "confirm": "Bu işlem {{count}} dosyayı kaldıracak. Devam edilsin mi?",
+    "success": "{{count}} dosya kaldırıldı.",
+    "nothing": "RuleForm tarafından oluşturulmuş dosya bulunamadı."
+  },
+  "errors": {
+    "configNotFound": "ruleform.yaml bulunamadı. Oluşturmak için `ruleform init` çalıştırın.",
+    "yamlParse": "YAML ayrıştırma hatası, satır {{line}}: {{message}}",
+    "validation": "Yapılandırma doğrulama hatası:",
+    "circularExtends": "Döngüsel extends tespit edildi: {{chain}}",
+    "missingExtends": "\"{{rule}}\" kuralı, mevcut olmayan \"{{parent}}\" kuralını genişletiyor.",
+    "missingVariable": "\"{{rule}}\" kuralında referans verilen \"{{name}}\" değişkeni tanımlı değil.",
+    "providerNotFound": "\"{{name}}\" sağlayıcısı mevcut değil."
+  }
+}

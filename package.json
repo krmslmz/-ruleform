@@ -1,0 +1,28 @@
+{
+  "name": "ruleform",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Terraform for AI coding rules. Write once, deploy to every AI tool.",
+  "author": "Kerem Solmaz <founder@sitilify.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/keremsolmaz/ruleform.git"
+  },
+  "homepage": "https://ruleform.app",
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "test": "turbo test",
+    "lint": "turbo lint",
+    "clean": "turbo clean"
+  },
+  "devDependencies": {
+    "turbo": "^2.4.0",
+    "typescript": "^5.7.0"
+  },
+  "packageManager": "pnpm@9.15.0",
+  "engines": {
+    "node": ">=18"
+  }
+}
