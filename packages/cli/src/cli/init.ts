@@ -91,8 +91,8 @@ export async function initCommand(options: InitOptions = {}): Promise<void> {
 
   const enabledCount = [enableCursor || true, enableClaude || true, enableCopilot || true, enableWindsurf, enableGemini].filter(Boolean).length;
 
-  log.success(t("init.success", { ruleCount: "2", providerCount: String(enabledCount) }));
-  log.dim(t("init.hint"));
+  console.log(t("init.success", { ruleCount: "2", providerCount: String(enabledCount) }));
+  console.log(t("init.hint"));
 }
 
 function buildConfig(
