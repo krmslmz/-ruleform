@@ -1,6 +1,6 @@
 {
-  "name": "ruleform",
-  "version": "0.1.0",
+  "name": "@ruleform/ruleform",
+  "version": "0.1.5",
   "description": "Terraform for AI coding rules. Write once, deploy to every AI tool.",
   "type": "module",
   "bin": {
@@ -8,7 +8,10 @@
   },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "files": ["dist"],
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
@@ -25,7 +28,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/keremsolmaz/ruleform.git",
+    "url": "https://github.com/krmslmz/ruleform.git",
     "directory": "packages/cli"
   },
   "homepage": "https://ruleform.app",
