@@ -2,7 +2,7 @@
 
 **Terraform for AI coding rules. Write once, deploy to every AI tool.**
 
-[![npm version](https://img.shields.io/npm/v/ruleform.svg)](https://www.npmjs.com/package/ruleform)
+[![npm version](https://img.shields.io/npm/v/ruleform.svg)](https://www.npmjs.com/package/@ruleform/ruleform)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ---
