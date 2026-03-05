@@ -144,6 +144,8 @@ We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
 MIT © [Kerem Solmaz](https://github.com/keremsolmaz)
 
+> *Disclaimer: Terraform is a registered trademark of HashiCorp. RuleForm is not affiliated with, endorsed by, or sponsored by HashiCorp.*
+
 ---
 
 **Website:** [ruleform.app](https://ruleform.app)
